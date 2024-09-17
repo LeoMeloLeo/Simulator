@@ -24,7 +24,7 @@ nav ul{
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #e15a1f;
+    background-color: #e15a1f; /*centralizar*/
     overflow: hidden;
 }
 nav ul li{
@@ -39,6 +39,18 @@ nav ul li a {
 nav ul li a:hover{
     background-color: #cc470d;
 }
+
+/* Container */
+.container{
+    margin: 50px 10px;
+    text-align: center;
+}
+#sw1{
+    float: left;
+}
+#sw2{
+    float: right;
+}
 /*rodape*/
 footer{
     width: 100%;
@@ -47,4 +59,11 @@ footer{
     padding: 5px 0px ;
     font-size: .9em;
     text-align: center;
+}
+
+/*Layout responsivo - telas com resolução superior a 576px*/
+@media (min-width: 576px){
+    #sw1, #sw2{
+        float: none;
+    }
 }
